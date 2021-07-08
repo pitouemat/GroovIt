@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{height: 100%;}
+
+body{
+    
+    transition: background .5s linear, color .5s linear;
+    background: rgb(31, 31, 31);
+}
+
+body.dark{
+    background: rgb(32, 32, 32);
+    color: #FFF;
+}
+
+header{
+    float: left;
+    width: 260px;
+    padding: 10px 20px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(38, 38, 38);
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    border-right: 1px rgb(60,60,60)solid;
+    
+    
+}
+.sidebar_logo{
+    color: #DFDFDF;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px rgb(60,60,60)solid;
+    
+}
+
+.sidebar_menu .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding: 10px;
+    height: 30px;
+    background: rgb(31, 31, 31);
+    border-radius: 8px;
+    border: 1px rgb(29, 29, 29) solid;
+    margin-bottom: 2rem;
+}
+
+.sidebar_menu .search input{
+    background: rgb(31, 31, 31);
+    border: rgb(60,60,60);
+    width: 190px;
+    outline: 0;
+    color: #FFF;
+}
+
+::-webkit-input-placeholder {
+    color: #DFDFDF;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: #DFDFDF;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #DFDFDF;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #DFDFDF;  
+ }
+
+ .sidebar_menu .menu_text{
+     display: flex;
+     flex-direction: column;
+     border-bottom: 1px rgb(60,60,60)solid;
+   
+ }
+
+ .sidebar_menu .menu_text a{
+    color: #DFDFDF;
+    margin-bottom: .5rem;
+    
+
+ }
+ .sidebar_menu .menu_text a:hover{
+     color: rgb(83, 83, 83);
+ }
+ .footer{
+     color: #FFF;
+     text-align: center;
+     margin-top: 55vh;
+ }
+
+ .main_content{
+     width: calc(100% - 260px);
+     height: 100vh;
+     color: #DFDFDF;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     padding: 5rem  ;
+     margin-left: 13rem;
+ }
+ .main_content h1{
+  
+   font-size: 2rem;
+   border-bottom: 1px rgb(60,60,60) solid;
+   margin-bottom: 2rem;
+ }
+
+ .main_cards{
+     
+     width: 29.3vw;
+ }
+ .main_cards img{
+     border-radius: 10px;
+ }
