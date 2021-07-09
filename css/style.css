@@ -16,6 +16,9 @@ body{
     
     transition: background .5s linear, color .5s linear;
     background: rgb(31, 31, 31);
+    height: 200vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body.dark{
@@ -33,6 +36,8 @@ header{
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
     border-right: 1px rgb(60,60,60)solid;
+    position: fixed;
+   
     
     
 }
@@ -106,7 +111,7 @@ header{
  }
 
  .main_content{
-     width: calc(100% - 260px);
+     width: 85%;
      height: 100vh;
      color: #DFDFDF;
      font-family: 'Raleway', sans-serif;
@@ -123,8 +128,39 @@ header{
 
  .main_cards{
      
-     width: 29.3vw;
+     
+     display: flex;
+    
+     border-bottom: 1px rgb(60,60,60) solid;
  }
  .main_cards img{
      border-radius: 10px;
+    
  }
+
+ .main_cards .card{
+     margin-left: 1rem ;
+     margin-bottom: 2rem;
+ }
+
+ .card:first-child{
+    margin-left: 0;
+}
+
+.main_cards_musics{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.card_music{
+    
+    cursor: pointer;
+    padding: 10px;
+}
+.card_music .autor{
+    color: rgb(83, 83, 83);
+}
+
+.card_music:hover{
+    background: rgb(38, 38, 38);
+}

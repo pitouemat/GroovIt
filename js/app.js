@@ -3,11 +3,11 @@ let agora = new Date();
 let horas = agora.getHours();
 
 
-if (horas >= 0 && horas < 12) {
+if (horas >= 0 && horas <= 12) {
     //BOM DIA
     msg.innerHTML = "Bom Dia"
 
-}else if (horas >= 12 && horas < 18) {
+}else if (horas > 12 && horas < 18) {
     //BOA TARDE
     msg.innerHTML = "Boa Tarde"
 
