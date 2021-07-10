@@ -52,6 +52,27 @@
     </header>
 
 
+
+    <div class="player">
+        <div class="player_artist" id="player_artist">
+
+        </div>
+
+        <div class="player_control">
+            <div class="player_control_buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="pauseBtn" href="#" style="display: none;" <i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div>
+
+            <div class="player_control_progress">
+                <div class="player_control_progress_2">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="main_content">
         <h1 id="day"></h1>
 
@@ -77,43 +98,56 @@
         </div>
         <h3>Múscias especiais</h3>
         <div class="main_cards_musics">
-        
 
-            <div class="card_music" >
+
+            <div class="card_music" id="card" data-image="img/bohemian.jpg" data-artist="Queen" data-song="Bohemian"
+                data-file="assets/bohemian.mp3">
                 <img src="img/bohemian.jpg" alt="" width="180" height="180">
                 <p>Bohemian Rhapsody</p>
                 <p class="autor">Queen</p>
             </div>
 
-            <div class="card_music" id="card" data-image ="imgs/beatle.jpg" data-artist ="The Beatles" data-song = "Let it Be" data-file ="assets/let.mp3">
+            <div class="card_music" id="card" data-image="img/beatle.jpg" data-artist="The Beatles"
+                data-song="Let it Be" data-file="assets/let.mp3">
                 <img src="img/beatle.jpg" alt="" width="180" height="180">
                 <p>Let it Be</p>
                 <p class="autor">The Beatles</p>
             </div>
-            <div class="card_music">
+            <div class="card_music" id="card" data-image="img/imagine.jpg" data-artist="John Lennon" data-song="Imagine"
+                data-file="assets/imagine.mp3">
                 <img src="img/imagine.jpg" alt="" width="180" height="180">
                 <p>imagine</p>
                 <p class="autor">Jonh Lennon</p>
             </div>
 
-            <div class="card_music">
-                <img src="img/killer.jpg" alt="" width="180" height="180">
+            <div class="card_music" data-image="img/killer.jpg"
+            data-artist="Queen" data-song="Killer Queen" data-file="assets/kq.mp3">
+                <img src="img/killer.jpg" alt="" width="180" height="180" >
                 <p>Killer Queen</p>
                 <p class="autor">Queen</p>
             </div>
 
-            <div class="card_music">
-                <img src="img/bi.png" alt="" width="180" height="180">
-                <p>Bellie Jean</p>
+            <div class="card_music" data-image="img/bi.jpg"
+            data-artist="Michael Jackson" data-song="Smooth Criminal" data-file="assets/smooth.mp3">
+                <img src="img/bi.png" alt="" width="180" height="180" >
+                <p>Smooth Criminal</p>
                 <p class="autor">Michael Jackson</p>
             </div>
 
         </div>
 
         </div>
+
     </section>
 
+
+
+
+    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: -999; opacity: 0;">
+
+    </audio>
     <script src="js/app.js"></script>
+    <script src="js/tocarMusic.js"></script>
 </body>
 
 </html>
