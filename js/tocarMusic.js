@@ -1,23 +1,44 @@
-let audioPlayer = document.getElementById('audioPlayer');
+function hello(){
+    let msg = document.getElementById('day');
+    let agora = new Date();
+    let horas = agora.getHours();
 
+
+    if (horas >= 0 && horas <= 12) {
+    //BOM DIA
+        msg.innerHTML = "Bom Dia"
+
+    }else if (horas > 12 && horas < 18) {
+    //BOA TARDE
+        msg.innerHTML = "Boa Tarde"
+
+    }else {
+    //BOA TARDE
+        msg.innerHTML = "Boa Noite"
+    }
+}
+
+
+function tocarMusica() {
+    
+
+let audioPlayer = document.getElementById('audioPlayer');
 let playBtn = document.getElementById('playBtn');
 let pauseBtn = document.getElementById('pauseBtn');
 
 document.getElementById('pauseBtn').addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault();//Cancelar ação do Scroll
 
     playBtn.style.display = 'inline';
     pauseBtn.style.display = 'none';
 
     audioPlayer.pause()
 
-
-    return false;
 });
 
 
 document.getElementById('playBtn').addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault();//N
 
     playBtn.style.display = 'none';
     pauseBtn.style.display = 'inline';
@@ -25,7 +46,7 @@ document.getElementById('playBtn').addEventListener('click', (e) => {
     audioPlayer.play()
 
 
-    return false;
+
 });
 
 const playSong = (file) => {
@@ -57,5 +78,8 @@ document.querySelectorAll('div.card_music').forEach(item =>{
         
     })
 })
+}
 
 
+hello();
+tocarMusica()
