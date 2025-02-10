@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onscroll="scroll()">
 
     <header>
 
@@ -42,8 +42,9 @@
 
             <div class="social_field">
                 <a href="https://github.com/pitouemat"><i class="fab fa-github" style="color: #FFF;"></i></a>
-                <a href=""><i class="fab fa-linkedin" style="color: #FFF;"></i></a>
-                <a href="https://discord.gg/sdPu25ws"> <i class="fab fa-discord" style="color: #FFF;"></i></a>
+                <a href="https://www.linkedin.com/in/matheusaguiarti/"><i class="fab fa-linkedin"
+                        style="color: #FFF;"></i></a>
+                
             </div>
 
         </div>
@@ -74,6 +75,7 @@
         <div class="player_control">
             <div class="player_control_buttons">
                 <a href=""><i class="fas fa-backward"></i></a>
+                <input type="range" id="progressBar" value="0" min="0" step="1">
                 <a id="pauseBtn" href="#" style="display: none;" <i class="far fa-pause-circle"></i></a>
                 <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
                 <a href=""><i class="fas fa-forward"></i></a>
@@ -156,10 +158,10 @@
 
 
 
-    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: 0; opacity: 0;">
+    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: -999; opacity: 0;">
 
     </audio>
-
+    <script src="js/app.js"></script>
     <script src="js/tocarMusic.js"></script>
 </body>
 
