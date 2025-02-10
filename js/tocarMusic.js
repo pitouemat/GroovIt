@@ -1,26 +1,3 @@
-function hello(){
-    let msg = document.getElementById('day');
-    let agora = new Date();
-    let horas = agora.getHours();
-
-
-    if (horas >= 0 && horas <= 12) {
-    //BOM DIA
-        msg.innerHTML = "Bom Dia"
-
-    }else if (horas > 12 && horas < 18) {
-    //BOA TARDE
-        msg.innerHTML = "Boa Tarde"
-
-    }else {
-    //BOA TARDE
-        msg.innerHTML = "Boa Noite"
-    }
-}
-
-
-function tocarMusica() {
-
 let audioPlayer = document.getElementById('audioPlayer');
 let playBtn = document.getElementById('playBtn');
 let pauseBtn = document.getElementById('pauseBtn');
@@ -86,7 +63,3 @@ progressBar.addEventListener('input', () => {
         audioPlayer.play(); 
     }
 });
-}
-
-hello();
-tocarMusica()
